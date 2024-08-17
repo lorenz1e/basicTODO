@@ -1,12 +1,10 @@
-/* Allgemeine Stile */
 .App {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* PlusButton Stile */
+
 .PlusButton {
   all: unset;
   display: flex;
@@ -27,7 +25,6 @@
   background-color: #333;
 }
 
-/* DeleteButton Stile */
 .DeleteButton {
   all: unset;
   height: 32px;
@@ -43,9 +40,8 @@
   background-color: #555;
 }
 
-/* TodoItem Stile */
 .TodoItem {
-  width: 60%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,18 +51,57 @@
   border-radius: 10px;
 }
 
-.TodoText {
-  all: unset
-  
+.TodoButtonDiv {
+  display: flex;
+  flex-direction: row;
 }
+
+.TodoTextDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.TodoText {
+  all: unset;
+  font-weight: 600;
+}
+
 
 .Header {
+  margin-bottom: 1rem;
   font-size: xx-large;
   font-weight: 700;
-  margin-bottom: 1rem;
 }
 
-.TodoDone {
-  text-decoration: line-through;
-  color: gray;
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ModalWindow {
+  position: fixed;
+  padding: 1rem;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+  background-color: white;
+}
+
+.ModalHeadline {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.Input {
+  all: unset;
+  background-color: #f1f1f1;
+  height: 2rem;
+  width: 100%;
+  border-radius: 10px;
 }
